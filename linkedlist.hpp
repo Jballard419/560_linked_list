@@ -7,6 +7,14 @@ linkedlist<T>::linkedlist()
 
 }
 template <typename T>
+linkedlist<T>::~linkedlist()
+{
+	this->m_top=nullptr;
+
+
+
+}
+template <typename T>
 void linkedlist<T>::insert(const T newentry)
 {
   insert(newentry,m_top);
