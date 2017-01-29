@@ -3,7 +3,7 @@ linkedlist<T>::linkedlist()
 {
 	this->m_top=nullptr;
 
-	this->m_size=0;
+
 
 }
 template <typename T>

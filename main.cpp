@@ -20,7 +20,7 @@ void printMenu() //prints the options available to the user
   /* add data */
   int input;
 
-  linkedlist<int> list = new linkedlist<int>();
+  linkedlist<int> list =  linkedlist<int>();
   do {
   printMenu();
   std::cin >> input;

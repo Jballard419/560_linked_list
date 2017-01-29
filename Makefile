@@ -1,4 +1,4 @@
-linkedlist: main.o PreconditionViolationException.o
+linkedlist: main.o 
 	g++ -g -std=c++11 main.o  -o linkedlist
 
 main.o: main.cpp node.h  linkedlist.hpp
