@@ -68,7 +68,7 @@ void linkedlist<T>::delete_node(const T val, node<T>* temp)
 	else if (temp->getvalue()==val)
 	{
     node<T>* previousnode= temp->getprevious();
-    node<T>* nextnode= temp->nextprevious();
+    node<T>* nextnode= temp->getnext();
     if(previousnode != nullptr)
       previousnode->setnext(nextnode);
     if(nextnode != nullptr)

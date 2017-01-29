@@ -20,7 +20,7 @@ void printMenu() //prints the options available to the user
   /* add data */
   int input;
 
-  linkedlist<int> list = new linkedlist();
+  linkedlist<int> list = new linkedlist<int>();
   do {
   printMenu();
   std::cin >> input;
@@ -52,7 +52,7 @@ void printMenu() //prints the options available to the user
         break;
 
       default:
-        std::std::cout << "invalid input" << '\n';
+        std::cout << "invalid input" << '\n';
         input = 0;
         break;
 
