@@ -20,8 +20,8 @@ void printMenu() //prints the options available to the user
   /* add data */
   int input;
 
-  linkedlist<int> list;
-  list.linkedlist();
+  linkedlist<int> lnist;
+  
   do {
   printMenu();
   std::cin >> input;
@@ -30,22 +30,22 @@ void printMenu() //prints the options available to the user
       case 1:
         std::cout << "Choose a number to be added to the list:" << '\n';
         std::cin >> input;
-        list.insert(input);
+        lnist.insert(input);
         input = 0;
         break;
 
       case 2:
         std::cout << "Choose a number to be deleted from the list:" << '\n';
         std::cin >> input;
-        list.delete_node(input);
+        lnist.delete_node(input);
         input = 0;
         break;
       case 3:
-        list.reverse();
+        lnist.reverse();
         input = 0;
         break;
       case 4:
-        list.print();
+        lnist.print();
         break;
       case 5:
         std::cout << "exiting..." << '\n';
