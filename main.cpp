@@ -19,6 +19,12 @@ void printMenu() //prints the options available to the user
 
  int main(int argc, char const *argv[]) {
   /* add data */
+
+  if (argc != 2)
+  {
+    std::cout << "file didn't load use like this " << '\n';
+    std::cout << "./linkedlist data.txt" << '\n';
+  }
   std::ifstream in(argv[1]);
   int value;
   int input;
