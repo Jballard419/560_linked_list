@@ -1,6 +1,7 @@
 #include "linkedlist.h"
 #include <string>
 #include <iostream>
+#include <fstream>
 
 void printMenu() //prints the options available to the user
 {
@@ -18,6 +19,8 @@ void printMenu() //prints the options available to the user
 
  int main(int argc, char const *argv[]) {
   /* add data */
+  std::ifstream in(argv[1]);
+
   int input;
 
   linkedlist<int> list;
