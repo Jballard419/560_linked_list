@@ -16,7 +16,7 @@ void printMenu() //prints the options available to the user
 
 }
 
-int int main(int argc, char const *argv[]) {
+ int main(int argc, char const *argv[]) {
   /* add data */
   int input;
 

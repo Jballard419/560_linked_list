@@ -37,9 +37,7 @@ class linkedlist:
 	//called: when the user wants to store the value at the top of the linkedlist without removing it
 	 void reverse();
 
-   void reverse(node<T>* test) {
-     /* code */
-   }
+   void reverse(node<T>* test);
 
 	 //in: the linkedlist
 	 //out: a print out of everything inside the linkedlist

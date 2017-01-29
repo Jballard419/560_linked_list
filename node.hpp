@@ -22,6 +22,7 @@ node<T>* node<T>::getprevious()
 {
 	return m_previous;
 }
+template<typename T>
 void node<T>::setnext(node<T>* prev)
 {
 	m_next=prev;
