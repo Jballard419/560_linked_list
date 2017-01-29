@@ -20,11 +20,19 @@ void printMenu() //prints the options available to the user
  int main(int argc, char const *argv[]) {
   /* add data */
   std::ifstream in(argv[1]);
-
+  int value;
   int input;
 
-  linkedlist<int> lnist;
-  
+
+  linkedlist<int> list;
+
+  while(true)
+  {
+    if (!(in>>value)){ break;}
+    list.insert(value);
+
+  }
+
   do {
   printMenu();
   std::cin >> input;
@@ -33,22 +41,22 @@ void printMenu() //prints the options available to the user
       case 1:
         std::cout << "Choose a number to be added to the list:" << '\n';
         std::cin >> input;
-        lnist.insert(input);
+        list.insert(input);
         input = 0;
         break;
 
       case 2:
         std::cout << "Choose a number to be deleted from the list:" << '\n';
         std::cin >> input;
-        lnist.delete_node(input);
+        list.delete_node(input);
         input = 0;
         break;
       case 3:
-        lnist.reverse();
+        list.reverse();
         input = 0;
         break;
       case 4:
-        lnist.print();
+        list.print();
         break;
       case 5:
         std::cout << "exiting..." << '\n';
