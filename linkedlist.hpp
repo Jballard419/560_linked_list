@@ -32,6 +32,7 @@ void linkedlist<T>::insert(const T val, node<T>* temp)
 	if(temp == nullptr)
 	{
   	temp=new node<T>(val);
+    m_top=temp;
     return;
 	}
 	else if (temp->getvalue()==val)
@@ -129,12 +130,12 @@ void linkedlist<T>::print() const
 
 
 	node<T>* temp=m_top;
-	do
+		while(temp!=nullptr)
   {
   	std::cout<< temp->getvalue()<<" ";
   	temp=temp->getnext();
 	}
-	while(temp!=nullptr);
+
   std::cout <<  '\n';
 
 	return;
