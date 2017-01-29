@@ -1,7 +1,8 @@
 #ifndef linkedlist_H
 #define linkedlist_H
 
-
+#include "node.h"
+#include <iostream>
 
 template <typename T>
 class linkedlist:

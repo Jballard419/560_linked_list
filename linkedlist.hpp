@@ -120,14 +120,14 @@ void linkedlist<T>::print() const
 	std::cout<<" List: "<<std::endl;
 
 
-	Boxofanything<T>* temp=m_top;
+	node<T>* temp=m_top;
 	do
   {
   	std::cout<< temp->getvalue()<<" ";
   	temp=temp->getnext();
 	}
 	while(temp!=nullptr);
-  std::std::cout <<  '\n';
+  std::cout <<  '\n';
 
 	return;
 }
