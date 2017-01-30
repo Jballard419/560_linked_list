@@ -9,7 +9,15 @@ linkedlist<T>::linkedlist()
 template <typename T>
 linkedlist<T>::~linkedlist()
 {
-	this->m_top=nullptr;
+  node<T> temp= m_top;
+	while(m_top!=nullptr)
+  {
+    temp=m_top->getnext();
+    delete(m_top);
+    m_top=temp;
+
+
+  }
 
 
 
